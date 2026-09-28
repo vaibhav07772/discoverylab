@@ -1,0 +1,42 @@
+# DiscoveryLab AI Configuration
+
+project:
+  name: "DiscoveryLab AI"
+  version: "0.1.0"
+
+# Research topics (default)
+research:
+  max_hypotheses: 5
+  max_papers: 20
+  min_confidence_threshold: 0.5
+  
+# Literature search
+literature:
+  sources:
+    - arxiv
+    - pubmed
+  max_results_per_source: 10
+  year_filter: 2020
+
+# Hypothesis generation
+hypotheses:
+  model: "openai/gpt-oss-120b"
+  temperature: 0.7
+  count: 5
+
+# Critic settings
+critic:
+  model: "openai/gpt-oss-120b"
+  min_evidence_sources: 2
+  challenge_strength: "high"  # low | medium | high
+
+# Evidence tracking
+evidence:
+  min_sources_for_confident: 5
+  max_contradictions_allowed: 2
+
+# Report
+report:
+  model: "openai/gpt-oss-120b"
+  include_counter_evidence: true
+  format: "markdown"

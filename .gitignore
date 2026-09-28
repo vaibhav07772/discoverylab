@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Env
+.env
+.env.local
+venv/
+env/
+.venv/
+
+# Data
+data/papers/*.json
+data/hypotheses/*.json
+data/evidence/*.json
+!data/papers/.gitkeep
+!data/hypotheses/.gitkeep
+!data/evidence/.gitkeep
+
+# Reports
+reports/*.json
+reports/*.md
+!reports/.gitkeep
+
+# Logs
+logs/*.log
+!logs/.gitkeep
+
+# Sandbox
+sandbox/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
