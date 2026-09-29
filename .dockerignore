@@ -1,0 +1,40 @@
+# Env & secrets
+.env
+.env.local
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# Env
+venv/
+env/
+.venv/
+
+# Data (mounted as volumes)
+data/papers/*.json
+data/hypotheses/*.json
+data/evidence/*.json
+reports/*.md
+
+# Logs
+logs/*.log
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Git
+.git/
+.gitignore
+
+# Docker
+Dockerfile
+docker-compose.yml
+.dockerignore
